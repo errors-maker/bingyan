@@ -91,3 +91,64 @@
     height: 21px;
     margin-left: 40px;
 }
+.nav-top-right {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 15px;
+    width: 411.39px;
+    font-size: 14px;
+}
+
+.unlogin {
+    width: 80px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    margin-left: 43px;
+}
+
+.unlogin a {
+    position: relative;
+    top: 5.4px;
+    color: #000;
+}
+
+
+.huo {
+    display: inline-block;
+    width: 20.4px;
+    height: 19.2px;
+    text-align: center;
+}
+
+.nav-top-right-search {
+    border-radius: 16px;
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    margin-left: 28px;
+    padding: 0 0 0 7px;
+    vertical-align: middle;
+    width: 247px;
+    height: 34px;
+    border: 1px solid #00cc7e;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+}
+
+.shousuo {
+    display: inline-block;
+    width: 180px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    color: #b8b8b8;
+}
