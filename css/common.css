@@ -295,3 +295,71 @@
     font-weight: 400;
     color: rgb(153, 153, 153);
 }
+/* 学校部分 */
+.school {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.school-left {
+    display: inline-block;
+    font-size: 16px;
+
+    width: 150px;
+    height: 60px;
+    margin: 0 0 0 20px;
+    text-align: center;
+}
+
+.school-left a {
+    position: relative;
+    top: 22px;
+}
+
+.school-all {
+    float: right;
+    display: inline-block;
+    width: 945px;
+    height: 60px;
+    padding: 0 43px 0 22px;
+}
+
+.dayu {
+    width: 14px;
+    height: 14px;
+    float: right;
+    font: 200 22px 'icomoon';
+    color: #dedede;
+}
+
+.school-all div {
+    float: left;
+    width: 110px;
+    height: 60px;
+}
+
+.beida {
+    width: 98px;
+    margin-right: 98px;
+}
+
+.zheda {
+    margin-right: 98px;
+}
+
+.nanda {
+    margin-right: 98px;
+}
+
+.huake {
+    margin-right: 98px;
+}
+
+.school-all div img {
+    position: relative;
+    top: 14.5px;
+    width: 110px;
+    line-height: 60px;
+}
