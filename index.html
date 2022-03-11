@@ -6,17 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中国大学MOOC(慕课)_国家精品课程在线学习平台</title>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <style>
+        /* 字体声明 */
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?beg1t1');
+            src: url('fonts/icomoon.eot?beg1t1#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?beg1t1') format('truetype'),
+                url('fonts/icomoon.woff?beg1t1') format('woff'),
+                url('fonts/icomoon.svg?beg1t1#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+
         body {
             background-color: #f7f7f7;
+        }
+
+        .school {
+            width: 1200px;
+            height: 60px;
+            margin: 0 auto;
+            background-color: #fff;
         }
     </style>
 </head>
 
 <body>
-    <!-- 顶部导航栏 -->
+    <!-- 顶部导航栏（左侧） -->
     <div class="navtop">
         <div class="navtop-container">
             <div class="navtop-logo">
@@ -47,14 +69,91 @@
                 </div>
                 <div class="nav-top-right-search">
                     <div class="input" style="height:30px;">
+                        <div class="sousuokuang">
+                            <span class="sousuospan"></span>
+                        </div>
                         <input type="text" placeholder="搜索感兴趣的课程" class="shousuo">
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- 主体页面 -->
-
+    <!-- 主体页面（左侧） -->
+    <div class="main">
+        <div class="main-left">
+            <div class="inner-box"><a href="#">国家精品</a></div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">计算机</a></span>
+                <a href="#" class="inner-a">大数据与人工智能</a>
+                <span class="inner-a">/...</span>
+            </div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">外语</a></span>
+                <a href="#" class="inner-a">听力/口语</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">写作/翻译</a>
+            </div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">理学工学农学</a></span>
+                <a href="#" class="inner-a">数学</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">物理</a>
+                <span class="inner-a">/...</span>
+            </div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">2023考研</a></span>
+                <a href="#" class="inner-a">数学</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">英语</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">政治</a>
+            </div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">期末不挂科</a></span>
+                <a href="#" class="inner-a">数学不挂科</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">物...</a>
+            </div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">大学应试英语</a></span>
+                <a href="#" class="inner-a">四六级</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">考研..</a>
+            </div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">考编·考证</a></span>
+                <a href="#" class="inner-a">公务员考试</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">事业...</a>
+            </div>
+            <div class="inner-box">
+                <span class="inner-span"><a href="#">求职就业</a></span>
+                <a href="#" class="inner-a">互联网求职</a>
+                <span class="xiegang">/</span>
+                <a href="#" class="inner-a">数据...</a>
+            </div>
+            <div class="inner-box">
+                <span><a href="#">更多</a></span>
+                <div class="main-triangle-box">
+                    <span class="icomoon"></span>
+                </div>
+            </div>
+            <!-- 主体右侧 -->
+        </div>
+        <div class="main-right">
+            <div class="main-right-1">免费学习来自名校名师的精品课程</div>
+            <div class="main-right-2"><img src="images/login.png"></div>
+            <div class="main-right-3">登录/注册</div>
+            <div class="main-right-4">网易和高等教育出版社出品</div>
+        </div>
+        <!-- 主体中间图片 -->
+        <div class="main-center">
+            <img src="images/274d3fedc2d743939eefa48303cf3c4c.png">
+        </div>
+    </div>
+    <div class="school"></div>
 </body>
 
 </html>
