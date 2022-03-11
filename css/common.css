@@ -91,6 +91,7 @@
     height: 21px;
     margin-left: 40px;
 }
+/* 顶部导航栏右侧 */
 .nav-top-right {
     position: absolute;
     right: 0;
@@ -137,11 +138,6 @@
     border: 1px solid #00cc7e;
 }
 
-.input {
-    width: 200px;
-    height: 30px;
-}
-
 .shousuo {
     display: inline-block;
     width: 180px;
@@ -151,4 +147,151 @@
     font-size: 14px;
     outline: none;
     color: #b8b8b8;
+}
+
+.sousuokuang {
+    font: 20px 'icomoon';
+    color: white;
+    border-radius: 16px;
+    position: absolute;
+    right: 125px;
+    width: 56px;
+    height: 35px;
+    background-color: #00cc7e;
+}
+
+.sousuospan {
+    line-height: 35px;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+}
+/* 主体部分 */
+.main {
+    width: 1200px;
+    height: 360px;
+    margin: 15px auto 12px;
+}
+
+.main a:hover {
+    text-decoration: underline;
+    color: #00ad4d;
+}
+
+.main-left {
+    float: left;
+    width: 200px;
+    height: 340px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.main-left div:hover {
+    color: #00ad4d;
+    background-color: #e5f9ee;
+}
+
+.main-center {
+    width: 776px;
+    height: 360px;
+    margin: 0 auto;
+}
+
+.main-right {
+    float: right;
+    width: 200px;
+    height: 360px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.inner-box {
+    width: 176px;
+    height: 34px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.inner-span {
+    margin-right: 8px;
+}
+
+.inner-box a {
+    line-height: 34px;
+}
+
+.inner-a {
+    margin-right: 0px;
+    font-size: 12px;
+    color: #999
+}
+
+.xiegang {
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, \\5B8B\4F53, sans-serif;
+    color: #999;
+}
+
+.main-triangle-box {
+    position: relative;
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 24px;
+}
+
+.icomoon {
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    font-family: 'icomoon';
+    color: #999;
+}
+
+.main-right-1 {
+    position: relative;
+    top: 24px;
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-right-2 {
+    position: relative;
+    top: 68px;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+.main-right-3 {
+    width: 168px;
+    height: 32px;
+    position: relative;
+    top: 92px;
+    margin: 0 auto;
+    border-radius: 18px;
+    background-color: #00cc7e;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.main-right-3:hover {
+    background-color: #00b36e;
+}
+
+.main-right-4 {
+    width: 144px;
+    position: relative;
+    bottom: -175px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
 }
