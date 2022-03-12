@@ -27,13 +27,14 @@
             background-color: #f7f7f7;
         }
 
+        /* 排行栏制作 */
         .paihang {
             width: 1200px;
             height: 552px;
             margin: 0 auto;
         }
 
-        .paihang p {
+        .benzhoupaihang {
             display: block;
             margin-bottom: 20px;
             font-size: 24px;
@@ -50,84 +51,6 @@
             margin-right: 18px;
             float: left;
             background-color: #fff;
-        }
-
-        .paihang-top {
-            background: linear-gradient(to bottom, #fcf5e3, #fff);
-            width: 350;
-            height: 68px;
-            background-color: #fff;
-            padding: 0 16px;
-        }
-
-        .paihang-top-left {
-            position: absolute;
-            left: 210px;
-            width: 180px;
-            height: 68px;
-        }
-
-        .remenpaihang {
-            position: relative;
-            top: 20.5px;
-            font-size: 18px;
-            font-weight: 600;
-            color: #d1802b;
-        }
-
-        .TOP {
-            position: relative;
-            left: 75px;
-            font-size: 14px;
-            font-weight: 400;
-            color: #d1802b;
-        }
-
-        .paihang-top-right {
-            position: relative;
-            top: 20.5px;
-            left: 190px;
-            font-size: 18px;
-            font-weight: bold;
-            font-style: italic;
-            color: #E2E2E2;
-        }
-
-        .paihang-main {
-            position: relative;
-            width: 368px;
-            height: 64px;
-            margin: 0 0 20px;
-            padding: 0 0 0 14px;
-        }
-
-        .paihang-main-1 {
-            position: absolute;
-            left: 15px;
-            display: inline-block;
-            width: 20px;
-            height: 100%;
-            font-size: 20px;
-            color: #FA5055;
-            font-family: Helvetica-BoldOblique, Helvetica;
-        }
-
-        .paihang-main-2 {
-            position: absolute;
-            left: 40px;
-            border-radius: 3px;
-            display: inline-block;
-            height: 100%;
-            margin-right: 12px;
-            overflow: hidden;
-        }
-
-        .paihang-main-2 img {
-            height: 100%;
-        }
-
-        .paihang-main-3 {
-            display: inline-block;
         }
     </style>
 </head>
@@ -334,7 +257,7 @@
     </div>
     <!-- 本周热门课程 -->
     <div class="paihang">
-        <p>本周课程排行</p>
+        <p class="benzhoupaihang">本周课程排行</p>
         <div class="paihang-box">
             <!-- 本周热门排行第一栏 -->
             <div class="paihang-">
@@ -343,7 +266,7 @@
                         <div class="remenpaihang">热门排行</div>
                         <div class="TOP">TOP50</div>
                     </div>
-                    <div class="paihang-top-right">POPULAR COURSES</div>
+                    <div class="paihang-top-right">&nbsp;&nbsp;POPULAR COURSES</div>
                 </div>
                 <div class="paihang-main">
                     <div class="paihang-main-1">1</div>
@@ -351,9 +274,9 @@
                             src="https://edu-image.nosdn.127.net/5B8826377EE623C7B6328E8F8B8D2871.png?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -362,9 +285,9 @@
                             src="https://img-ph-mirror.nosdn.127.net/tYhzuDVilzlDOo2bEyH_Qg==/6608226511143817333.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -373,9 +296,9 @@
                             src="https://edu-image.nosdn.127.net/E7D2C36195ED1520AFA48E9F1CA2DFCE.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -384,9 +307,9 @@
                             src="https://edu-image.nosdn.127.net/E168A15535FA40E9A6D24C044469C9C5.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -395,9 +318,9 @@
                             src="https://edu-image.nosdn.127.net/C4C10C0C27254ED77925331F19F83FED.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
             </div>
@@ -408,7 +331,8 @@
                         <div class="remenpaihang">新课排行</div>
 
                     </div>
-                    <div class="paihang-top-right">POPULAR COURSES</div>
+                    <div class="paihang-top-right">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW COURSES</div>
                 </div>
                 <div class="paihang-main">
                     <div class="paihang-main-1">1</div>
@@ -416,9 +340,9 @@
                             src="https://edu-image.nosdn.127.net/BC388AE2C3632A1F40894BF169C8EDC9.png?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -427,9 +351,9 @@
                             src="https://edu-image.nosdn.127.net/1de6247cb61743a2ab6aa2b75cad77b1.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -438,9 +362,9 @@
                             src="https://edu-image.nosdn.127.net/7018EE2DE92B0407F4823492A29BF85D.png?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -449,9 +373,9 @@
                             src="https://edu-image.nosdn.127.net/F6F44488BF3FAABE0B4D31AE0DE2D4E9.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -460,9 +384,9 @@
                             src="https://edu-image.nosdn.127.net/E5B31D50A5E8AF7990CC4F4D98C18140.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
             </div>
@@ -473,7 +397,9 @@
                         <div class="remenpaihang">热门排行</div>
                         <div class="TOP">TOP50</div>
                     </div>
-                    <div class="paihang-top-right">POPULAR COURSES</div>
+                    <div class="paihang-top-right">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIVE-STAR
+                    </div>
                 </div>
                 <div class="paihang-main">
                     <div class="paihang-main-1">1</div>
@@ -481,9 +407,9 @@
                             src="https://edu-image.nosdn.127.net/c80b4040de3b4aeb8e76165b31525d58.png?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -492,9 +418,9 @@
                             src="https://edu-image.nosdn.127.net/5B8826377EE623C7B6328E8F8B8D2871.png?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -503,9 +429,9 @@
                             src="https://edu-image.nosdn.127.net/d059468ec35a43298d7abcb49f7fba5f.png?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -514,9 +440,9 @@
                             src="https://edu-image.nosdn.127.net/601D194A35322C225C249A5B48BFCEB7.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
                 <div class="paihang-main">
@@ -525,9 +451,9 @@
                             src="https://edu-image.nosdn.127.net/28406a7ba7de4171ae6eb16be4d015f5.jpg?imageView&quality=100&thumbnail=230y130">
                     </div>
                     <div class="paihang-main-3">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p class="duanluo-1">Python语言程序设计</p>
+                        <p class="duanluo-2">北京理工大学</p>
+                        <p class="duanluo-3">77665人参加</p>
                     </div>
                 </div>
             </div>
