@@ -324,6 +324,10 @@
     top: 22px;
 }
 
+.school-left a:hover {
+    color:#333;
+}
+
 .school-all {
     float: right;
     display: inline-block;
@@ -468,6 +472,31 @@
     background: #f8f9fb;
     font: 12px PingFangSC-Regular, PingFang SC;
     color: #999;
+}
+/* 排行栏制作 */
+.paihang {
+    width: 1200px;
+    height: 552px;
+    margin: 0 auto;
+}
+
+.benzhoupaihang {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.paihang-box {
+    height: 496px;
+    background-color: #f7f7f7;
+}
+
+.paihang- {
+    width: 382px;
+    height: 496px;
+    margin-right: 18px;
+    float: left;
+    background-color: #fff;
 }
 /* 排行栏顶部 */
 .paihang-top {
