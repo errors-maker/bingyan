@@ -142,7 +142,23 @@
         </div>
         <!-- 主体中间图片 -->
         <div class="main-center">
-            <img src="images/274d3fedc2d743939eefa48303cf3c4c.png">
+            <ul id="pic-ul">
+                <li><img src="images/轮播图1.png"></li>
+                <li><img src="images/轮播图2.png"></li>
+                <li><img src="images/轮播图3.png"></li>
+                <li><img src="images/轮播图4.jpg"></li>
+                <li><img src="images/轮播图5.png"></li>
+            </ul>
+            <div class="leftjt" id="left"><img src="images/轮播图左箭头.png"></div>
+            <div class="rightjt" id="right"><img src="images/轮播图右箭头.png"></div>
+            <div class="lunbob">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            </ul>
         </div>
     </div>
     <div class="school">
@@ -164,7 +180,7 @@
         <p class="bianjituijian">编辑推荐</p>
         <div class="course clearfix">
             <div class="course-">
-                <div class="course-img"><img src="images/bg1.png"></div>
+                <div class="course-img"><a href="#"><img src="images/bg1.png"></a></div>
                 <div class="course-text">
                     <div class="introduction">
                         <a href="#">
@@ -179,8 +195,7 @@
                 </div>
             </div>
             <div class="course-">
-                <div class="course-img"><img
-                        src="https://edu-image.nosdn.127.net/c106bd5ba472415e9d5fb6741ed2d3b5.jpg?imageView&type=webp">
+                <div class="course-img"><a href="#"><img src="images/bgp5.png"></a>
                 </div>
                 <div class="course-text">
                     <div class="introduction">
@@ -196,8 +211,7 @@
                 </div>
             </div>
             <div class="course-">
-                <div class="course-img"><img
-                        src="https://edu-image.nosdn.127.net/d61e8df1f0bf4d7e8f591420c61665a5.png?imageView&type=webp">
+                <div class="course-img"><a href="#"><img src="images/bg2.png"></a>
                 </div>
                 <div class="course-text">
                     <div class="introduction">
@@ -213,8 +227,7 @@
                 </div>
             </div>
             <div class="course-">
-                <div class="course-img"><img
-                        src="https://edu-image.nosdn.127.net/7B89B9F6290AE29E67027F745A34EDA4.jpg?imageView&thumbnail=510y288&quality=100&type=webp">
+                <div class="course-img"><a href="#"><img src="images/bgp3.png"></a>
                 </div>
                 <div class="course-text">
                     <div class="introduction">
@@ -230,8 +243,7 @@
                 </div>
             </div>
             <div class="course-">
-                <div class="course-img"><img
-                        src="https://edu-image.nosdn.127.net/2AB3DD1EE9E47752DC2081B88F6318DB.png?imageView&thumbnail=426y240&quality=100&type=webp">
+                <div class="course-img"><a href="#"><img src="images/bgp4.png"></a>
                 </div>
                 <div class="course-text">
                     <div class="introduction">
@@ -502,3 +514,63 @@
 </body>
 
 </html>
+<script>
+    var mouse = document.querySelector('.main-center');
+    var left = document.getElementById('left');
+    var right = document.getElementById('right');
+    var lis = document.querySelectorAll('#pic-ul>li');
+    var dots = document.querySelectorAll('.lunbob>div');
+    var index = 0;
+    // 点击right
+    right.onclick = rightFun;
+    function rightFun() {
+        lis[index].style.opacity = 0;
+        index++;
+        if (index == 5)
+            index = 0;
+        lis[index].style.opacity = 1;
+        changeDot();
+    }
+    // 点击left
+    left.onclick = function () {
+        lis[index].style.opacity = 0;
+        index--;
+        if (index == -1)
+            index = 4;
+        lis[index].style.opacity = 1;
+        changeDot();
+    }
+    // 下面按钮颜色改变
+    function changeDot() {
+        for (var i = 0; i < dots.length; i++) {
+            dots[i].style.backgroundColor = "rgb(255,255,255,.5)";
+        }
+        dots[index].style.backgroundColor = "rgb(255,255,255)";
+    }
+    // 定时器
+    var timer = setInterval(rightFun, 3000);
+    // 鼠标移入图片不动
+    mouse.onmouseover = function () {
+        clearInterval(timer);
+        left.style.opacity = 1;
+        right.style.opacity = 1;
+    }
+    // 鼠标移出图片继续动
+    mouse.onmouseout = function () {
+        timer = setInterval(rightFun, 3000);
+        left.style.opacity = 0;
+        right.style.opacity = 0;
+    }
+    for (var i = 0; i < dots.length; i++) {
+        dots[i].pos = i;
+    }
+    // 为每个li添加鼠标移入事件
+    for (var i = 0; i < dots.length; i++) {
+        dots[i].onclick = function () {
+            lis[index].style.opacity = 0;
+            index = this.pos;
+            lis[index].style.opacity = 1;
+            changeDot();
+        }
+    }
+</script>
