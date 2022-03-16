@@ -454,16 +454,62 @@
     margin-bottom: 20px;
 
 }
-
+.fqieyetu {
+    position: relative;
+    width: 1200px;
+    height: 295px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.qieyetu {
+    width: 2400px;
+    position: absolute;
+    transition: left 0.5s;
+}
+.block {
+    position: relative;
+    width: 224px;
+    height: 295px;
+    float: left;
+}
 .course-dayu {
     position: absolute;
-    left: 50%;
+    left: 100%;
     top: 50%;
-    margin-left: 560px;
+    transform: translateX(-30%);
     width: 40px;
     height: 40px;
-    font: 300 60px 'icomoon';
-    color: #ccc;
+    opacity: 1;
+    user-select: none;
+    z-index: 1;
+}
+.course-dayu img{
+    width: 40px;
+    height: 40px;
+}
+
+.course-dayu:hover {
+    cursor: pointer;
+}
+
+.course-xiaoyu {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    user-select: none;
+    z-index: 1;
+}
+.course-xiaoyu img{
+    width: 40px;
+    height: 40px;
+}
+
+.course-xiaoyu:hover {
+    cursor: pointer;
 }
 
 .bianjituijian {
@@ -489,10 +535,11 @@
 .course- {
     position: relative;
     width: 224px;
-    height: 317px;
+    height: 295px;
     float: left;
-    margin-right: 16px;
-
+    border-radius: 8px;
+    margin-right: 16px;background-color: #fff;
+    cursor: pointer;
 }
 .course-:hover {
     box-shadow: 5px 2px 8px -2px rgba(0, 0, 0, .1);
@@ -517,8 +564,10 @@
     width: 200px;
     position: relative;
     margin-top: 126px;
+    margin-bottom: 10px;
     left: 0;
     padding: 10px 12px;
+    padding-bottom: 0;
     border-radius: 0 0 8px 8px;
     background-color: #fff;
 }
@@ -545,7 +594,10 @@
 .course-footer {
     height: 34px;
     margin-top: 8px;
+    margin-bottom: 8px;
     padding: 8px;
+    padding-bottom: 0;
+    border-radius: 8px;
     background: #f8f9fb;
     font: 12px PingFangSC-Regular, PingFang SC;
     color: #999;
