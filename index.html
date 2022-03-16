@@ -24,6 +24,7 @@
         }
 
         body {
+            overflow-x: hidden;
             background-color: #f7f7f7;
         }
     </style>
@@ -176,90 +177,138 @@
     </div>
     <!-- 课程部分 -->
     <div class="course-box">
-        <div class="course-dayu"></div>
+        <div class="course-dayu"><img src="images/右边箭头.png"></div>
+        <div class="course-xiaoyu"><img src="images/左边箭头.png"></div>
         <p class="bianjituijian">编辑推荐</p>
         <div class="course clearfix">
-            <div class="course-">
-                <div class="course-img"><a href="#"><img src="images/bg1.png"></a></div>
-                <div class="course-text">
-                    <div class="introduction">
-                        <a href="#">
-                            <h3>密码学引论（上）</h3>
-                        </a>
-                        <a href="#">
-                            <p>山东大学</p>
-                        </a>
+            <!-- 切页图制作 -->
+            <div class="fqieyetu">
+                <ul class="qieyetu clearfix" id="change">
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bg1.png"></div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>密码学引论（上）</h3>
+                                <p>山东大学</p>
+                            </div>
+                            <div class="people-invlovolved">750人参加</div>
+                            <div class="course-footer">消息认证码是如何构造的？</div>
+                        </div>
                     </div>
-                    <div class="people-invlovolved"><a href="#">750人参加</a></div>
-                    <div class="course-footer"><a href="#">消息认证码是如何构造的？</a></div>
-                </div>
-            </div>
-            <div class="course-">
-                <div class="course-img"><a href="#"><img src="images/bgp5.png"></a>
-                </div>
-                <div class="course-text">
-                    <div class="introduction">
-                        <a href="#">
-                            <h3>分子生物学基础</h3>
-                        </a>
-                        <a href="#">
-                            <p>西北农林科技大学</p>
-                        </a>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bgp5.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>分子生物学基础</h3>
+                                <p>西北农林科技大学</p>
+                            </div>
+                            <div class="people-invlovolved">156人参加</div>
+                            <div class="course-footer">你对病毒、核酸检测了解多少？</div>
+                        </div>
                     </div>
-                    <div class="people-invlovolved"><a href="#">156人参加</a></div>
-                    <div class="course-footer"><a href="#">你对病毒、核酸检测了解多少？</a></div>
-                </div>
-            </div>
-            <div class="course-">
-                <div class="course-img"><a href="#"><img src="images/bg2.png"></a>
-                </div>
-                <div class="course-text">
-                    <div class="introduction">
-                        <a href="#">
-                            <h3>化学基础实验</h3>
-                        </a>
-                        <a href="#">
-                            <p>南京大学</p>
-                        </a>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bg2.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>化学基础实验</h3>
+                                <p>南京大学</p>
+                            </div>
+                            <div class="people-invlovolved">198人参加</div>
+                            <div class="course-footer">培养化工科学和工程技术人才</div>
+                        </div>
                     </div>
-                    <div class="people-invlovolved"><a href="#">198人参加</a></div>
-                    <div class="course-footer"><a href="#">培养化工科学和工程技术人才</a></div>
-                </div>
-            </div>
-            <div class="course-">
-                <div class="course-img"><a href="#"><img src="images/bgp3.png"></a>
-                </div>
-                <div class="course-text">
-                    <div class="introduction">
-                        <a href="#">
-                            <h3>中国传统运动</h3>
-                        </a>
-                        <a href="#">
-                            <p>上海交通大学</p>
-                        </a>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bgp3.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>中国传统运动</h3>
+                                <p>上海交通大学</p>
+                            </div>
+                            <div class="people-invlovolved">516人参加</div>
+                            <div class="course-footer">西方运动和东方传统运动的区别是什么</div>
+                        </div>
                     </div>
-                    <div class="people-invlovolved"><a href="#">516人参加</a></div>
-                    <div class="course-footer"><a href="#">西方运动和东方传统运动的区别是什么？</a></div>
-                </div>
-            </div>
-            <div class="course-">
-                <div class="course-img"><a href="#"><img src="images/bgp4.png"></a>
-                </div>
-                <div class="course-text">
-                    <div class="introduction">
-                        <a href="#">
-                            <h3>信息素养</h3>
-                        </a>
-                        <a href="#">
-                            <p>四川师范大学</p>
-                        </a>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bgp4.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
 
+                                <h3>信息素养</h3>
+                                <p>四川师范大学</p>
+                            </div>
+                            <div class="people-invlovolved">999人参加</div>
+                            <div class="course-footer">善用搜索,帮你解决80%人生问题</div>
+                        </div>
                     </div>
-                    <div class="people-invlovolved"><a href="#">999人参加</a></div>
-                    <div class="course-footer"><a href="#">善用搜索,帮你解决80%人生问题</a></div>
-                </div>
+
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bg6.png"></div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>密码学引论（上）</h3>
+                                <p>山东大学</p>
+                            </div>
+                            <div class="people-invlovolved"><a href="#">750人参加</a></div>
+                            <div class="course-footer"><a href="#">消息认证码是如何构造的？</a></div>
+                        </div>
+                    </div>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bg7.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>分子生物学基础</h3>
+                                <p>西北农林科技大学</p>
+                            </div>
+                            <div class="people-invlovolved">156人参加</div>
+                            <div class="course-footer">你对病毒、核酸检测了解多少？</div>
+                        </div>
+                    </div>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bg8.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>化学基础实验</h3>
+                                <p>南京大学</p>
+                            </div>
+                            <div class="people-invlovolved">198人参加</div>
+                            <div class="course-footer">培养化工科学和工程技术人才</div>
+                        </div>
+                    </div>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bg9.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>中国传统运动</h3>
+                                <p>上海交通大学</p>
+                            </div>
+                            <div class="people-invlovolved">516人参加</div>
+                            <div class="course-footer">西方运动和东方传统运动的区别是什么</div>
+                        </div>
+                    </div>
+                    <div class="course-">
+                        <div class="course-img"><img src="images/bg10.png">
+                        </div>
+                        <div class="course-text">
+                            <div class="introduction">
+                                <h3>信息素养</h3>
+                                <p>四川师范大学</p>
+                            </div>
+                            <div class="people-invlovolved">999人参加</div>
+                            <善用搜索,帮你解决80%人生问题 class="course-footer">善用搜索,帮你解决80%人生问题
+                        </div>
+                    </div>
+                </ul>
             </div>
         </div>
+
+    </div>
     </div>
     <!-- 本周热门课程 -->
     <div class="paihang">
@@ -276,6 +325,7 @@
                     </div>
                     <div class="paihang-top-right">&nbsp;&nbsp;POPULAR COURSES</div>
                 </div>
+                <!-- 切页部分 -->
                 <div class="paihang-main">
                     <a href="#">
                         <div class="paihang-main-1">1</div>
@@ -578,5 +628,22 @@
             lis[index].style.opacity = 1;
             changeDot();
         }
+    }
+    // 为编辑推荐的箭头添加鼠标移入事件
+    var you = document.querySelector('.course-dayu');
+    var zuo = document.querySelector('.course-xiaoyu');
+    var divs = document.querySelectorAll('.course-');
+    var change = document.getElementById('change');
+
+    you.onclick = function () {
+        you.style.opacity = 0;
+        zuo.style.opacity = 1;
+        change.style.left = '-1200px';
+    }
+    zuo.onclick = function () {
+        you.style.opacity = 1;
+        zuo.style.opacity = 0;
+        change.style.left = '0';
+
     }
 </script>
