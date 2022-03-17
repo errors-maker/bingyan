@@ -141,12 +141,12 @@
     border: 1px solid #00cc7e;
 }
 
-.shousuo {
+.sousuo {
     display: inline-block;
     width: 180px;
     height: 20px;
     padding: 5px;
-    border: none;
+    border-style: none;
     font-size: 14px;
     outline: none;
     color: #b8b8b8;
@@ -465,13 +465,8 @@
 .qieyetu {
     width: 2400px;
     position: absolute;
+    left: 0;
     transition: left 0.5s;
-}
-.block {
-    position: relative;
-    width: 224px;
-    height: 295px;
-    float: left;
 }
 .course-dayu {
     position: absolute;
@@ -490,6 +485,7 @@
 }
 
 .course-dayu:hover {
+    color: black;
     cursor: pointer;
 }
 
@@ -640,6 +636,8 @@
     text-align: center;
     border-radius: 50%;
     background-color: rgba(0,0,0,.2);
+    opacity: 0;
+    z-index: 2;
 }
 .paihang-you {
     display: inline-block;
@@ -653,6 +651,8 @@
     text-align: center;
     border-radius: 50%;
     background-color: rgba(0,0,0,.2);
+    opacity: 0;
+    z-index: 2;
 }
 /* 排行栏顶部 */
 .paihang-top {
@@ -699,12 +699,31 @@
     color: #E2E2E2;
 }
 /* 排行栏中部 */
+#fpaihang {
+    position: relative;
+    width: 382px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
+}
+#fpaihang:hover {
+    cursor: pointer;
+}
+.paihang-qieye {
+    position: relative;
+    width: 1146px;
+    height: 400px;
+    left: 0;
+    transition: left 0.5s;
+}
 .paihang-main {
     position: relative;
+    float: left;
     width: 368px;
     height: 64px;
     margin: 0 0 20px;
     padding: 0 0 0 14px;
+    user-select: none;
 }
 
 .paihang-main-1 {
